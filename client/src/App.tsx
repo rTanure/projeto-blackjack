@@ -1,6 +1,10 @@
+import Router from "./routes/Router"
+import "./styles/reset.scss"
+// import "tailwindcss/index.css"
+
 function App() {
   return (
-    <h1>Inicio</h1>
+    <Router />
   )
 }
 
