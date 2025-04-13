@@ -1,12 +1,23 @@
 import { Button } from "@mui/material";
+import {  useEffect } from "react";
 import { useNavigate } from "react-router-dom";
+import { io } from "socket.io-client";
+
+const socket = io("http://localhost:3000", {
+  
+})
 
 export default function Home() {
   const navigate = useNavigate();
 
+  socket.connect()
+  useEffect(() => {
+  }, [])
+
   function handleCreateRoom() {
     navigate("/game");
   }
+
   function handleJoinRoom() {
     navigate("/game");
   }
